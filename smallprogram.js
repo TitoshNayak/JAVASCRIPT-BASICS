@@ -26,7 +26,7 @@ Age(2019);
     console.log(sum);
 
     //execute a program using while loop
-
+/*
     let num=[1,2,3,4,5,10];
     let i=0;
     let sum=0;
@@ -36,9 +36,8 @@ Age(2019);
         i++;
     }
     console.log(sum);
-  
+  */
 
     // program to write a key values
 
- 
  
