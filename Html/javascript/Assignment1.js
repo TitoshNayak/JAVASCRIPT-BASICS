@@ -297,7 +297,7 @@ console.log("Fibonacci(5): "+fibonacci(5));
 console.log("Fibonacci(7): "+fibonacci(7));
 */
 
-//13. write a programt o read 5numbers and only print even number
+//13. write a program to read 5numbers and only print even number
 /*
 var line=[];
 
@@ -309,28 +309,73 @@ for (var i = 2; i <= 100; i += 2) {
   line.push(i);
 }
 console.log(line);
+
+
+14.  no idea
+program to generate the fibonacci series 17
+
+const number = parseInt(prompt('Enter the number:'));
+let n1 = 0, n2 = 1, nextTerm;
+
+console.log('fibonacci series:');
+console.log(n1);
+console.log(n2);
+
+nextTerm = n1 + n2;
+
+   while(nextTerm <= number)
+   {
+     
+       n1 = n2;
+       n2 = nextTerm;
+       nextTerm = n1 + n2 ;
+       
+   }
+   console.log(nextTerm);
+
 */
-// 15.write a program to check a givrn number is Armstrong number or not
+// 14.write a program to for the fibonacci series
+/*
+var fibonacci_series = function (n) 
+{
+  if (n===1) 
+  {
+    return [0, 1];
+  } 
+  else 
+  {
+    var s = fibonacci_series(n - 1);
+    s.push(s[s.length - 1] + s[s.length - 2]);
+    return s;
+  }
+};
 
-function Armstrong()
-	{
-		var flag,number,remainder,addition = 0;
-		number = Number(document.getElementById("N").value);
+ console.log(fibonacci_series(17));
+ */
 
-		flag = number;
-		while(number > 0)
-		{
-			remainder = number%10;
-			addition = addition + remainder*remainder*remainder;
-			number = parseInt(number/10);
-		}
 
-		if(addition == flag)
-		{
-			window.alert("-The inputed number is Armstrong");
-		}
-		else
-		{
-			window.alert("-The inputed number is not Armstrong");
-		}
-	}
+
+
+//15.write a program to check a givrn number is Armstrong number or not
+
+let sum = 0;
+const number = prompt('Enter a three-digit positive integer: ');
+
+// create a temporary variable
+let temp = number;
+while (temp > 0) {
+    // finding the one's digit
+    let remainder = temp % 10;
+
+    sum += remainder * remainder * remainder;
+
+    // removing last digit from the number
+    temp = parseInt(temp / 10); // convert float into integer
+}
+// check the condition
+if (sum == number) {
+    console.log(`${number} is an Armstrong number`);
+}
+else {
+    console.log(`${number} is not an Armstrong number.`);
+}
