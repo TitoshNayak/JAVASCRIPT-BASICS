@@ -21,27 +21,71 @@
 </head>
 <br> <br> <br> 
 
-<body style="text-align:center" ><br> <br> <br> <br> <br> <br> 
-    <h1 style="text-align:center" > Building Attractive Buttons using 
-        <p>Bootstrap</p></h1>
-    <br> <br> <br> 
+<body  onload="welcome();" style="text-align:center" ><br> <br> <br> <br> <br> <br> 
+    <h1 style="text-align:center"color:"red;" > Building Attractive Buttons using 
+        <p>Bootstrap</p>
+    </h1>
+    
+
+
+    <br/>
 <h1>
-    <button class="btn btn-dark"> SUBMIT</button>
+    
+    <button class="btn-lg btn-success"> Submit</button>
+    <button class="btn-lg btn-warning" id="btn" onmouseover="changed()"> over_Submit</button>
+    <button class="btn-lg btn-info" id="out" onmouseout="out()"> out_Submit</button>
 
-    <button class="btn btn-success"> Submit</button>
-    <button class="btn btn-info"> Submit</button>
+    <button class="btn-lg btn-dark" id="dbclick" ondblclick="double()"> db_Submit</button>
+    <button class="btn-lg btn-danger"  id="buton" onclick="Button()">onclick_Button</button>
+    
+    <input type="text" class="btn-lg btn-white" placeholder="onfocus" id="down" onfocus="onmousedown()">
+    <input type="text" id="myInput" onblur="blurFunction()">
 
-    <button class="btn btn-danger"> Submit</button>
-    <button class="btn btn-success"> Submit</button>
-    <button class="btn btn-dark"> Submit</button>
-    <button class="btn btn-success"  id="buton" onclick="Button()">my Button</button>
 </h1>
 </body>
 <script>
+
+
+function changed(){
+         var ele = document.getElementById('btn');
+         ele.style.background='red';
+         ele.style.color='yellow';
+         
+      }
+      function out(){
+         var ele = document.getElementById('out');
+         ele.style.background='pink';
+         ele.style.color='blue';
+         
+      }
+
     function Button()
-    {
+    { 
+        
         alert("your button is working ");
     } 
+    
+    function welcome()
+{
+    alert("welcome to the Bootstrap");
+}
+function double()
+{
+    var ele = document.getElementById('dbclick');
+         ele.style.background='red';
+         ele.style.color='grey';
+}
+
+function onmousedown()
+{
+var ele = document.getElementById('down');
+         ele.style.background='red';
+         ele.style.color='yellow';
+         
+      }
+      function blurFunction() {
+  document.getElementById("myInput").style.background = "red";
+}
 </script>
 
 </html>
