@@ -56,12 +56,20 @@ add();
 
 //Function return value using fat array
 //program:
-  let message=()=>
+/*  
+let message=()=>
   {
       return ("I love web developement");
   };
 
   let msg=message("hello");
   console.log(msg);
+*/
 
- 
+//reverse the digit using fatwarray
+const num = 124323;
+const reverse = (num) => parseInt(String(num)
+.split("")
+.reverse()
+.join(""), 10);
+console.log(reverse(num));
