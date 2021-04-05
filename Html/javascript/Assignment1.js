@@ -215,7 +215,7 @@ for(let i = 1; i <= num; i++) {
 }
 */
 //10. factor of the numbers
-
+/*
 var number=prompt("Please Enter the number");
 
 for(var i=1;i<=number;i++)
@@ -225,7 +225,7 @@ for(var i=1;i<=number;i++)
         console.log(i);
     }
 }
-
+*/
 //factors of the nmbber using while loop
 /*
 var number=prompt("Please Enter the number");
@@ -238,7 +238,99 @@ while( i<=number);
    }
 }*/
 
+//12. write program to reverse the number
 
+//for loop
+/*
+function reverseString(str) {
+    var newString = "";
+    for (var i = str.length - 1; i >= 0; i--) {
+        newString += str[i];
+    }
+    return newString;
+}
+reverseString('nayak');
+*/
+//14.write a program to print the fibonaci series
+/*
+function fibonacci(num)
+    {
+        if(num==1)
+            return 0;
+        if(num==2)
+            return 1;
+        var num1=0;
+        var num2=1;
+        var sum;
+        var i=2;
+        while (i<num)  
+        {
+            sum=num1+num2;
+            num1=num2;
+            num2=sum;
+            i+=1;
+        }
+        return num2;
+    }
+  
+console.log("Fibonacci(5): "+fibonacci(5)+"<br>");
+console.log("Fibonacci(8): "+fibonacci(8)+"<br>");
+*/
 
+/*
+function fibonacci(num)
+{
+    var num1=0;
+    var num2=1;
+    var sum;
+    var i=0;
+    for (i = 0; i < num; i++) 
+    {
+        sum=num1+num2;
+        num1=num2;
+        num2=sum;
+    }
+    return num2;
+}
+  
+console.log("Fibonacci(5): "+fibonacci(5));
+console.log("Fibonacci(7): "+fibonacci(7));
+*/
 
+//13. write a programt o read 5numbers and only print even number
+/*
+var line=[];
 
+for (var i = 2; i <= 100; i += 2) {
+  if (line.length == 5) {
+    console.log(line);
+    line=[];
+  }
+  line.push(i);
+}
+console.log(line);
+*/
+// 15.write a program to check a givrn number is Armstrong number or not
+
+function Armstrong()
+	{
+		var flag,number,remainder,addition = 0;
+		number = Number(document.getElementById("N").value);
+
+		flag = number;
+		while(number > 0)
+		{
+			remainder = number%10;
+			addition = addition + remainder*remainder*remainder;
+			number = parseInt(number/10);
+		}
+
+		if(addition == flag)
+		{
+			window.alert("-The inputed number is Armstrong");
+		}
+		else
+		{
+			window.alert("-The inputed number is not Armstrong");
+		}
+	}
