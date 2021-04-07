@@ -7,27 +7,16 @@
     <title>Document</title>
 </head>
 <body>
-
     <script>
-
-        let num=prompt("Enter a number:");
-
-if(num >0 )
-{
-    document.write("  is a positive number");
-}
-else if(num == 0)
-{
-    document.write("The number is Zero or neutral")
-}
-else
-{
-    document.write(" is a negative number");
-}
-
-
-
-      </script>
-    
+       var num=12345;
+       var firdtdigit=num;
+       var lastdigit=num%10;
+       while(firstdigit >=10)
+       {
+           firdtdigit =parseInt(firstdigit/10);
+       }
+       document.write("firstdigit");
+       document.write("lastdigit");
+    </script>
 </body>
 </html>
