@@ -224,13 +224,25 @@ let emp=[
     "Phone_number": "2612976809"
   }
 ]
+
+let id=i;
+let i=1;
+ for(i=1;i<=25;i++)
+ {
+   document.getElementById("mytable").innerHTML=emp;
+ }
+
+
+/*
 buildTable(emp);
 function buildTable(data) {
   
-  var table = document.getElementById("table");
+  var table = document.getElementById("mytable");
+
+  
   let row = data.map((emp) => {
-    return `<tr>
-          <td>${emp.id}</td>
+    return `<tr >
+          <td >${emp.id}</td>
           <td class="text-uppercase">${emp.first_name}</td>
           <td>${emp.last_name}</td>
           <td>${emp.email}</td>
@@ -241,3 +253,4 @@ function buildTable(data) {
   table.innerHTML += row;
 
 }
+*/
