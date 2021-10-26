@@ -9,7 +9,7 @@ console.log(result);
 //console.log(arr.forEach((value) => value + 1)); // map with implicit return
 */
 
-/*
+
 let array=[2,3,4,8];
 let result=array.map((value)=>
 {
@@ -63,5 +63,5 @@ let num=(a,b,c)=>
 }
 num(2,4,9);
 
-*/
+
 
